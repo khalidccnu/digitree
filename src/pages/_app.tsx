@@ -1,11 +1,18 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import Head from "next/head";
-import React from "react";
+import { Providers } from '@lib/context';
+import '@styles/app.scss';
+import type { AppProps } from 'next/app';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+
+const inter = Inter({
+  weight: ['100', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <React.Fragment>
+    <Providers nextFont={inter}>
       <Head>
         <title>Welcome to Digitree | Digitree</title>
         <meta
@@ -14,6 +21,6 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
-    </React.Fragment>
+    </Providers>
   );
 }

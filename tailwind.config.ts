@@ -1,11 +1,11 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: '1rem',
     },
     extend: {},
   },

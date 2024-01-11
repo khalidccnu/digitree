@@ -1,10 +1,13 @@
-import { Head, Html, Main, NextScript } from "next/document";
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicons/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.svg" />
       </Head>
       <body>
         <Main />
