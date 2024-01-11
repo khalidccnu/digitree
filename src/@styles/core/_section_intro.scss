@@ -1,0 +1,20 @@
+.section_intro {
+  .intro_wrapper {
+    .intro_subtitle {
+      @apply p;
+      color: var(--color-primary);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .intro_title {
+      @apply h5;
+      color: var(--color-accent);
+      @include md {
+        @apply h4;
+      }
+      @include lg {
+        @apply h2;
+      }
+    }
+  }
+}
