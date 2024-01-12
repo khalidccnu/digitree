@@ -11,12 +11,14 @@ type TProps = {
 export const Providers = ({ nextFont, children }: TProps) => {
   const theme: ThemeConfig = {
     token: {
+      fontFamily: 'var(--font-inter)',
       fontSize: 16,
+      colorPrimary: 'var(--color-primary)',
     },
   };
 
   return (
-    <ConfigProvider theme={theme}>
+    <ConfigProvider getPopupContainer={() => document.getElementById('__main') || document.body} theme={theme}>
       <main role="main" id="__main" className={nextFont?.className}>
         {children}
       </main>

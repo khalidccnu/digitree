@@ -1,0 +1,81 @@
+.hero_banner_section {
+  .hero_banner_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    @include lg {
+      flex-direction: row;
+      align-items: center;
+    }
+    .image_container {
+      @include lg {
+        flex: 1 1 55%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .content_wrapper {
+      @include lg {
+        flex: 1 1 45%;
+      }
+      .section_intro {
+        .intro_wrapper {
+          .intro_subtitle {
+            font-weight: 400;
+            @include xl {
+              font-size: 1.5rem;
+              line-height: 2rem;
+            }
+          }
+          .intro_title {
+            @include xl {
+              font-size: 5rem;
+              line-height: 5.9375rem;
+            }
+          }
+        }
+      }
+      .description {
+        @apply p;
+        margin-top: 1.5rem;
+        color: var(--color-text);
+        @include xl {
+          margin-top: 2.2rem;
+          font-size: 1.5rem;
+          line-height: 2.6875rem;
+        }
+      }
+      .btn_group {
+        margin-top: 2.2rem;
+        display: flex;
+        gap: 1rem;
+        @include xl {
+          margin-top: 3.2rem;
+          gap: 1.5rem;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          height: auto;
+          padding: 0.675rem 1.5rem;
+          border-radius: 6.25rem;
+          box-shadow: none;
+          @include xl {
+            padding: 1.125rem 2.5rem;
+          }
+          &.ant-btn-primary {
+            background: var(--color-primary);
+          }
+          &.ant-btn-default {
+            border: none;
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

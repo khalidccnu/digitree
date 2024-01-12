@@ -1,3 +1,5 @@
+import HeroBannerSection from '@components/HeroBannerSection';
+
 export default function Home() {
-  return null;
+  return <HeroBannerSection className="py-10 lg:py-20" />;
 }
