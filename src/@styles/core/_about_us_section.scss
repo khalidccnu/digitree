@@ -1,0 +1,59 @@
+.about_us_section {
+  .about_us_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+    @include lg {
+      flex-direction: row;
+      align-items: center;
+    }
+    .content_wrapper {
+      @include lg {
+        flex: 1 1 45%;
+      }
+      .description {
+        @apply p;
+        margin-top: 1.5rem;
+        color: var(--color-text);
+        @include xl {
+          margin-top: 2.2rem;
+        }
+      }
+      .card_wrapper {
+        margin-top: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @include sm {
+          flex-direction: row;
+        }
+        @include xl {
+          margin-top: 3.2rem;
+          gap: 1.5rem;
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .card_title {
+            @apply h5;
+            color: var(--color-accent);
+          }
+          .card_description {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .image_container {
+      @include lg {
+        flex: 1 1 55%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
