@@ -1,0 +1,252 @@
+.our_team_section {
+  .our_team_wrapper {
+    .card_wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      align-items: start;
+      gap: 1rem;
+      margin-top: 3.5rem;
+      @include md {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+      }
+      @include lg {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @include xl {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 0;
+      }
+      .team_group {
+        &:nth-child(odd) {
+          .our_team_member_card {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+          }
+        }
+        &:nth-child(even) {
+          .our_team_member_card {
+            background-color: var(--color-secondary);
+            border-color: var(--color-secondary);
+          }
+        }
+        &.team_group_odd {
+          &:nth-child(odd) {
+            @include xl {
+              margin-top: -1.75rem;
+              .our_team_member_card {
+                background-color: var(--color-secondary);
+                border-color: var(--color-secondary);
+              }
+            }
+          }
+          &:nth-child(even) {
+            @include xl {
+              margin-top: 2rem;
+              .our_team_member_card {
+                background-color: var(--color-primary);
+                border-color: var(--color-primary);
+              }
+            }
+          }
+        }
+        &.team_group_even {
+          &:nth-child(odd) {
+            @include xl {
+              .our_team_member_card {
+                background-color: var(--color-primary);
+                border-color: var(--color-primary);
+              }
+            }
+          }
+          &:nth-child(even) {
+            @include xl {
+              margin-top: 3.75rem;
+              .our_team_member_card {
+                background-color: var(--color-secondary);
+                border-color: var(--color-secondary);
+              }
+            }
+          }
+          &:nth-child(n + 5) {
+            @include xl {
+              margin-top: -1.75rem;
+            }
+            &:nth-child(even) {
+              @include xl {
+                margin-top: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.our_team_member_card {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  &:hover {
+    .image_container {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .image_container {
+    width: 14.125rem;
+    height: 16.75rem;
+    max-width: 70%;
+    margin: 2.7rem auto -1.2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(1);
+      transition: transform 0.5s;
+    }
+  }
+  .content_wrapper {
+    background-color: var(--color-white);
+    padding: 1.5rem 1.25rem;
+    clip-path: polygon(
+      99.837% 91.8%,
+      99.837% 99.425%,
+      0.163% 99.425%,
+      0.163% 5.399%,
+      0.163% 5.399%,
+      0.183% 5.392%,
+      0.203% 5.386%,
+      0.225% 5.379%,
+      0.247% 5.371%,
+      0.271% 5.363%,
+      0.296% 5.355%,
+      0.322% 5.347%,
+      0.35% 5.338%,
+      0.378% 5.329%,
+      0.407% 5.32%,
+      0.407% 5.32%,
+      0.488% 5.294%,
+      0.576% 5.266%,
+      0.672% 5.236%,
+      0.775% 5.204%,
+      0.884% 5.17%,
+      1.001% 5.134%,
+      1.125% 5.096%,
+      1.255% 5.056%,
+      1.392% 5.014%,
+      1.536% 4.971%,
+      1.536% 4.971%,
+      1.844% 4.88%,
+      2.178% 4.782%,
+      2.538% 4.678%,
+      2.922% 4.569%,
+      3.331% 4.455%,
+      3.764% 4.336%,
+      4.219% 4.213%,
+      4.697% 4.086%,
+      5.198% 3.956%,
+      5.72% 3.824%,
+      5.72% 3.824%,
+      6.825% 3.551%,
+      8.01% 3.271%,
+      9.269% 2.989%,
+      10.598% 2.707%,
+      11.992% 2.428%,
+      13.446% 2.157%,
+      14.957% 1.896%,
+      16.519% 1.649%,
+      18.128% 1.419%,
+      19.779% 1.209%,
+      19.779% 1.209%,
+      23.19% 0.866%,
+      26.715% 0.645%,
+      30.316% 0.575%,
+      33.958% 0.682%,
+      37.603% 0.994%,
+      41.215% 1.536%,
+      44.757% 2.337%,
+      48.192% 3.423%,
+      51.484% 4.821%,
+      54.597% 6.558%,
+      54.597% 6.558%,
+      59.53% 10.109%,
+      64.13% 14.212%,
+      68.406% 18.79%,
+      72.366% 23.761%,
+      76.02% 29.047%,
+      79.376% 34.567%,
+      82.442% 40.243%,
+      85.227% 45.993%,
+      87.739% 51.74%,
+      89.988% 57.403%,
+      89.988% 57.403%,
+      91.017% 60.178%,
+      91.982% 62.903%,
+      92.886% 65.567%,
+      93.729% 68.16%,
+      94.513% 70.673%,
+      95.239% 73.095%,
+      95.907% 75.417%,
+      96.519% 77.629%,
+      97.076% 79.72%,
+      97.578% 81.681%,
+      97.578% 81.681%,
+      97.809% 82.609%,
+      98.027% 83.502%,
+      98.233% 84.356%,
+      98.425% 85.172%,
+      98.604% 85.948%,
+      98.771% 86.683%,
+      98.926% 87.375%,
+      99.068% 88.023%,
+      99.198% 88.626%,
+      99.316% 89.183%,
+      99.316% 89.183%,
+      99.371% 89.444%,
+      99.422% 89.693%,
+      99.471% 89.929%,
+      99.516% 90.154%,
+      99.559% 90.365%,
+      99.599% 90.564%,
+      99.636% 90.751%,
+      99.67% 90.924%,
+      99.701% 91.084%,
+      99.729% 91.231%,
+      99.729% 91.231%,
+      99.743% 91.3%,
+      99.755% 91.365%,
+      99.767% 91.426%,
+      99.778% 91.485%,
+      99.788% 91.539%,
+      99.798% 91.591%,
+      99.807% 91.639%,
+      99.815% 91.683%,
+      99.823% 91.724%,
+      99.829% 91.761%,
+      99.829% 91.761%,
+      99.83% 91.765%,
+      99.831% 91.769%,
+      99.832% 91.773%,
+      99.832% 91.777%,
+      99.833% 91.781%,
+      99.834% 91.785%,
+      99.835% 91.789%,
+      99.835% 91.793%,
+      99.836% 91.796%,
+      99.837% 91.8%
+    );
+    .name {
+      @apply h5;
+      color: var(--color-accent);
+    }
+    .designation {
+      margin-top: 0.25rem;
+      color: var(--color-text);
+      @apply p;
+    }
+  }
+}
