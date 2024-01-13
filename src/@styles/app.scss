@@ -5,6 +5,11 @@
 @import './utils/index.scss';
 @import './core/index.scss';
 
+@import 'swiper/css';
+@import 'swiper/css/controller';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
 ::-webkit-scrollbar {
   width: 0.25rem;
 }
