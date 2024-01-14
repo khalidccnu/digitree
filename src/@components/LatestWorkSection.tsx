@@ -20,27 +20,17 @@ const LatestWorkSection: React.FC<IProps> = ({ className }) => {
       <div className="container">
         <SectionIntro subtitle="Recent work" title="Our latest case studies" />
         <div className="latest_work_wrapper">
-          <div className="latest_work_column">
-            {columnArr[0]?.map((img: ILatestWorkMocData) => (
-              <div key={img?.id} className="image_container">
-                <img src={img?.url} alt="" />
+          {columnArr?.map((column: ILatestWorkMocData[], idx) => {
+            return (
+              <div key={idx} className="latest_work_column">
+                {column?.map((img: ILatestWorkMocData) => (
+                  <div key={img?.id} className="image_container">
+                    <img src={img?.url} alt="" />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="latest_work_column">
-            {columnArr[1]?.map((img: ILatestWorkMocData) => (
-              <div key={img?.id} className="image_container">
-                <img src={img?.url} alt="" />
-              </div>
-            ))}
-          </div>
-          <div className="latest_work_column">
-            {columnArr[2]?.map((img: ILatestWorkMocData) => (
-              <div key={img?.id} className="image_container">
-                <img src={img?.url} alt="" />
-              </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
