@@ -1,0 +1,33 @@
+.recent_video_section {
+  .section_intro {
+    margin-bottom: 3rem;
+  }
+  .recent_video_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+    @include md {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+    }
+    @include xl {
+      grid-auto-rows: 22rem;
+    }
+    .video_card {
+      &.thumb {
+        @include xl {
+          grid-row: span 2;
+        }
+      }
+      .image_container {
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

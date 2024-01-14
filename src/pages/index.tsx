@@ -3,6 +3,7 @@ import HeroBannerSection from '@components/HeroBannerSection';
 import LatestWorkSection from '@components/LatestWorkSection';
 import OurTeamSection from '@components/OurTeamSection';
 import RecentBlogSection from '@components/RecentBlogSection';
+import RecentVideoSection from '@components/RecentVideoSection';
 import TestimonialSection from '@components/TestimonialSection';
 import WhatWeDoSection from '@components/WhatWeDoSection';
 import React from 'react';
@@ -16,6 +17,7 @@ export default function Home() {
       <OurTeamSection className="py-10 lg:py-20" />
       <LatestWorkSection className="py-10 lg:py-20" />
       <RecentBlogSection className="py-10 lg:py-20" />
+      <RecentVideoSection className="py-10 lg:py-20" />
       <TestimonialSection className="py-10 lg:py-20" />
     </React.Fragment>
   );
