@@ -29,19 +29,15 @@
         .image_container {
           @include xl {
             flex-grow: 1;
-            width: 100%;
-          }
-        }
-        .content_wrapper {
-          @include xl {
-            margin-top: auto;
+            max-width: 100%;
           }
         }
       }
       .image_container {
         @include xl {
           flex-shrink: 0;
-          width: 12.5rem;
+          max-width: 21rem;
+          aspect-ratio: 16 / 9;
         }
         img {
           width: 100%;
