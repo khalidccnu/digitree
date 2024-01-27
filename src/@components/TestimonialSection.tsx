@@ -17,7 +17,7 @@ const TestimonialSection: React.FC<IProps> = ({ className }) => {
   const [contentSwiper, setContentSwiper] = useState<SwiperInstance | null>(null);
 
   return (
-    <section className={cn(className, 'testimonial_section')}>
+    <section className={cn(className, 'testimonial_section')} id="testimonial">
       <div className="container">
         <SectionIntro subtitle="Testimonial" title="What our client say" />
         <div className="testimonial_wrapper">

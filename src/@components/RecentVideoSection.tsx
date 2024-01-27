@@ -9,7 +9,7 @@ interface IProps {
 
 const RecentVideoSection: React.FC<IProps> = ({ className }) => {
   return (
-    <section className={cn(className, 'recent_video_section')}>
+    <section className={cn(className, 'recent_video_section')} id="videos">
       <div className="container">
         <SectionIntro title="Latest videos" />
         <div className="recent_video_wrapper">

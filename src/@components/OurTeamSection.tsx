@@ -11,7 +11,7 @@ interface IProps {
 
 const OurTeamSection: React.FC<IProps> = ({ className }) => {
   return (
-    <section className={cn(className, 'our_team_section')}>
+    <section className={cn(className, 'our_team_section')} id="team">
       <div className="container">
         <div className="our_team_wrapper">
           <SectionIntro subtitle="Our team" title="Team Members" />

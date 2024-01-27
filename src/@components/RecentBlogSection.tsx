@@ -9,7 +9,7 @@ interface IProps {
 
 const RecentBlogSection: React.FC<IProps> = ({ className }) => {
   return (
-    <section className={cn(className, 'recent_blog_section')}>
+    <section className={cn(className, 'recent_blog_section')} id="blogs">
       <div className="container">
         <SectionIntro subtitle="latest news" title="Recent blog post" />
         <div className="recent_blog_wrapper">

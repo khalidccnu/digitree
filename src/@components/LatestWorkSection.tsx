@@ -16,7 +16,7 @@ const LatestWorkSection: React.FC<IProps> = ({ className }) => {
   });
 
   return (
-    <section className={cn(className, 'latest_work_section')}>
+    <section className={cn(className, 'latest_work_section')} id="work">
       <div className="container">
         <SectionIntro subtitle="Recent work" title="Our latest case studies" />
         <div className="latest_work_wrapper">

@@ -10,7 +10,7 @@ interface IProps {
 
 const HeroBannerSection: React.FC<IProps> = ({ className }) => {
   return (
-    <section className={cn(className, 'hero_banner_section')}>
+    <section className={cn(className, 'hero_banner_section')} id="home">
       <div className="container">
         <div className="hero_banner_wrapper">
           <div className="image_container">
