@@ -1,7 +1,7 @@
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--color-white);
+  background-color: $colorWhite;
   z-index: 99;
   .nav_wrapper {
     display: flex;
@@ -22,10 +22,10 @@ nav {
       margin-left: 8.25rem;
       .nav_item {
         .nav_link {
-          color: var(--color-secondary);
+          color: $colorSecondary;
           @apply p;
           &.active {
-            color: var(--color-primary);
+            color: $colorPrimary;
           }
         }
       }
@@ -39,8 +39,8 @@ nav {
         padding: 0.675rem 1.5rem;
         border-radius: 6.25rem;
         box-shadow: none;
-        color: var(--color-white);
-        background: var(--color-primary);
+        color: $colorWhite;
+        background: $colorPrimary;
         @include xl {
           padding: 1.125rem 2.5rem;
         }

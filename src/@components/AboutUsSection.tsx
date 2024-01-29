@@ -14,7 +14,11 @@ const AboutUsSection: React.FC<IProps> = ({ className }) => {
           <div className="content_wrapper">
             <SectionIntro
               subtitle="About Us"
-              title="We are a dynamic team of creative people of innovation & marketing"
+              title={
+                <>
+                  We are a dynamic team of <span>creative</span> people of innovation & marketing
+                </>
+              }
             />
             <p className="description">
               As a process transformation company, we rethinks and rebuilds processes for the digital age by combining

@@ -20,14 +20,14 @@
       .team_group {
         &:nth-child(odd) {
           .our_team_member_card {
-            background-color: var(--color-primary);
-            border-color: var(--color-primary);
+            background-color: $colorPrimary;
+            border-color: $colorPrimary;
           }
         }
         &:nth-child(even) {
           .our_team_member_card {
-            background-color: var(--color-secondary);
-            border-color: var(--color-secondary);
+            background-color: $colorSecondary;
+            border-color: $colorSecondary;
           }
         }
         &.team_group_odd {
@@ -35,8 +35,8 @@
             @include xl {
               margin-top: -1.75rem;
               .our_team_member_card {
-                background-color: var(--color-secondary);
-                border-color: var(--color-secondary);
+                background-color: $colorSecondary;
+                border-color: $colorSecondary;
               }
             }
           }
@@ -44,8 +44,8 @@
             @include xl {
               margin-top: 2rem;
               .our_team_member_card {
-                background-color: var(--color-primary);
-                border-color: var(--color-primary);
+                background-color: $colorPrimary;
+                border-color: $colorPrimary;
               }
             }
           }
@@ -54,8 +54,8 @@
           &:nth-child(odd) {
             @include xl {
               .our_team_member_card {
-                background-color: var(--color-primary);
-                border-color: var(--color-primary);
+                background-color: $colorPrimary;
+                border-color: $colorPrimary;
               }
             }
           }
@@ -63,8 +63,8 @@
             @include xl {
               margin-top: 3.75rem;
               .our_team_member_card {
-                background-color: var(--color-secondary);
-                border-color: var(--color-secondary);
+                background-color: $colorSecondary;
+                border-color: $colorSecondary;
               }
             }
           }
@@ -110,7 +110,7 @@
     }
   }
   .content_wrapper {
-    background-color: var(--color-white);
+    background-color: $colorWhite;
     padding: 1.5rem 1.25rem;
     clip-path: polygon(
       99.837% 91.8%,
@@ -241,11 +241,11 @@
     );
     .name {
       @apply h5;
-      color: var(--color-accent);
+      color: $colorAccent;
     }
     .designation {
       margin-top: 0.25rem;
-      color: var(--color-text);
+      color: $colorText;
       @apply p;
     }
   }

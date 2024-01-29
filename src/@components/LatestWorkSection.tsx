@@ -18,7 +18,14 @@ const LatestWorkSection: React.FC<IProps> = ({ className }) => {
   return (
     <section className={cn(className, 'latest_work_section')} id="work">
       <div className="container">
-        <SectionIntro subtitle="Recent work" title="Our latest case studies" />
+        <SectionIntro
+          subtitle="Recent work"
+          title={
+            <>
+              Our latest <span>case</span> studies
+            </>
+          }
+        />
         <div className="latest_work_wrapper">
           {columnArr?.map((column: ILatestWorkMocData[], idx) => {
             return (

@@ -60,17 +60,17 @@
           text-align: start;
         }
         .card_icon_container {
-          background-color: var(--color-white);
+          background-color: $colorWhite;
           padding: 1rem;
           border-radius: 1.875rem;
         }
         .card_title {
           @apply h5;
-          color: var(--color-accent);
+          color: $colorAccent;
         }
         .card_description {
           @apply p;
-          color: var(--color-text);
+          color: $colorText;
         }
       }
     }
@@ -99,13 +99,13 @@
     button {
       height: auto;
       padding: 1.125rem 2.5rem;
-      color: var(--color-secondary);
+      color: $colorSecondary;
       font-weight: 600;
       line-height: 1.5rem;
-      border-color: var(--color-border);
+      border-color: $colorBorder;
       border-radius: 6.25rem;
       &:hover {
-        border-color: var(--color-border) !important;
+        border-color: $colorBorder !important;
       }
     }
   }

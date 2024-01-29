@@ -19,7 +19,14 @@ const TestimonialSection: React.FC<IProps> = ({ className }) => {
   return (
     <section className={cn(className, 'testimonial_section')} id="testimonial">
       <div className="container">
-        <SectionIntro subtitle="Testimonial" title="What our client say" />
+        <SectionIntro
+          subtitle="Testimonial"
+          title={
+            <>
+              What our <span>client</span> say
+            </>
+          }
+        />
         <div className="testimonial_wrapper">
           <div className="image_swiper">
             <Swiper

@@ -12,7 +12,14 @@ const WhatWeDoSection: React.FC<IProps> = ({ className }) => {
   return (
     <section className={cn(className, 'what_we_do_section')} id="what_we_do">
       <div className="container">
-        <SectionIntro subtitle="What we do" title="We provide wide range of business services" />
+        <SectionIntro
+          subtitle="What we do"
+          title={
+            <>
+              We provide <span>wide</span> range of business services
+            </>
+          }
+        />
         <div className="what_we_do_wrapper">
           <div className="first_card_wrapper">
             <div className="card_wrapper">

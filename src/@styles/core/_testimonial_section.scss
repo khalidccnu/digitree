@@ -12,7 +12,7 @@
     }
     .image_swiper {
       .image_container {
-        border: 1px solid var(--color-secondary);
+        border: 1px solid $colorSecondary;
         border-radius: 0.5rem;
         overflow: hidden;
         img {
@@ -37,28 +37,28 @@
         }
         .prev_btn,
         .next_btn {
-          color: var(--color-primary);
-          background-color: var(--color-background-2);
+          color: $colorPrimary;
+          background-color: $colorBackground;
           padding: 0.5rem;
           border-radius: 0.5rem;
           cursor: pointer;
           &.disabled_btn {
-            color: var(--color-primary-hover);
+            color: $colorPrimaryHover;
           }
         }
         .pagination {
           width: fit-content;
           .swiper-pagination-bullet {
-            background-color: var(--color-primary-hover);
+            background-color: $colorPrimaryHover;
             &.swiper-pagination-bullet-active {
-              background-color: var(--color-primary);
+              background-color: $colorPrimary;
             }
           }
         }
       }
       .content_swiper {
         .card {
-          background-color: var(--color-background-2);
+          background-color: $colorBackground;
           padding: 1.5rem;
           border-radius: 0.5rem;
           .card_description {

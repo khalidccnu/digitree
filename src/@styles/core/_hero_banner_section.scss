@@ -41,7 +41,7 @@
       .description {
         @apply p;
         margin-top: 1.5rem;
-        color: var(--color-text);
+        color: $colorText;
         @include xl {
           margin-top: 2.2rem;
           font-size: 1.5rem;
@@ -68,11 +68,11 @@
             padding: 1.125rem 2.5rem;
           }
           &.ant-btn-primary {
-            background: var(--color-primary);
+            background: $colorPrimary;
           }
           &.ant-btn-default {
             border: none;
-            color: var(--color-primary);
+            color: $colorPrimary;
           }
         }
       }

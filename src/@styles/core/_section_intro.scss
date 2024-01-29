@@ -2,19 +2,36 @@
   .intro_wrapper {
     .intro_subtitle {
       @apply p;
-      color: var(--color-primary);
+      color: $colorPrimary;
       font-weight: 600;
       text-transform: uppercase;
     }
     .intro_title {
       @apply h5;
       margin-top: 1.2rem;
-      color: var(--color-accent);
+      color: $colorAccent;
       @include md {
         @apply h4;
       }
       @include lg {
         @apply h2;
+      }
+      span {
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -0.4rem;
+          width: 90%;
+          height: 0.875rem;
+          transform: translateX(-50%);
+          background-color: $colorPrimary;
+          mask-image: url('/images/section_curve.svg');
+          mask-repeat: no-repeat;
+          mask-size: contain;
+        }
       }
     }
   }

@@ -25,6 +25,7 @@
         @include xl {
           grid-row: 1 / -1;
           flex-direction: column;
+          align-items: flex-start;
         }
         .image_container {
           @include xl {
@@ -51,7 +52,7 @@
           display: flex;
           flex-wrap: wrap;
           gap: 0.75rem;
-          color: var(--color-light);
+          color: $colorLight;
           font-size: 0.875rem;
           font-weight: 600;
           line-height: 1.25rem;
@@ -59,7 +60,7 @@
         }
         .title {
           margin-top: 0.5rem;
-          color: var(--color-accent);
+          color: $colorAccent;
           @apply h6 line-clamp-2;
         }
         button {
@@ -70,7 +71,7 @@
           gap: 0.5rem;
           padding: 0.5rem 1.5rem;
           height: auto;
-          background-color: var(--color-primary);
+          background-color: $colorPrimary;
           border-radius: 6.25rem;
           box-shadow: none;
         }
