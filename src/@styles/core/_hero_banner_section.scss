@@ -79,3 +79,27 @@
     }
   }
 }
+
+.video_player {
+  width: auto !important;
+  .ant-modal-content {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    .ant-modal-close {
+      top: -2rem;
+      inset-inline-end: -1rem;
+      color: $colorWhite;
+      transition: color 500ms;
+      &:hover {
+        color: $colorSecondary;
+        background-color: transparent;
+      }
+    }
+    .ant-modal-body {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+  }
+}
